@@ -30,6 +30,12 @@ $(document).ready(function () {
             },
             error: function (val) {
                 console.log('*******Failed', val);
+                $('#weather-report').text('Weather');
+                $('#cityname').text('This City does not exist');
+                $('#temp-value').text('0');
+                $('#pres-val').text('0');
+                $('#wind-val').text('0');
+                $('#hum-val').text('0');
                 $('#error-msg').text('This city does not exist');
                 
 
